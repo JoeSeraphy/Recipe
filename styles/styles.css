@@ -1,0 +1,183 @@
+.container {
+  width: 42rem;
+  background-color: var(--White);
+  padding: 2rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  margin: 2rem auto;
+}
+
+.container .omelette {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.container .text {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  font-family: "Young Serif", sans-serif;
+}
+
+.container .text .title {
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--DarkCharcoal);
+}
+
+.container .text .subtitle {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--WengeBrown);
+}
+
+.container .preparation {
+  margin-top: 1rem;
+  background-color: var(--RoseWhite);
+  width: 100%;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.container .preparation .title {
+  color: var(--DarkRaspberry);
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.container .preparation .list {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  list-style-position: inside;
+}
+
+.container .preparation .list li {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.875rem;
+  margin-left: 1rem;
+  color: var(--WengeBrown);
+}
+.container .preparation .list li::marker {
+  color: var(--DarkRaspberry);
+}
+
+.container .ingredients {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.container .ingredients .title {
+  color: var(--Nutmeg);
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.container .ingredients .list {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  list-style-position: inside;
+}
+
+.container .ingredients .list li {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.875rem;
+  color: var(--WengeBrown);
+}
+
+.container .instructions {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.container .instructions .title {
+  color: var(--Nutmeg);
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.container .instructions .ordeList {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  list-style-position: inside;
+}
+
+.container .instructions .ordeList li {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.875rem;
+  color: var(--WengeBrown);
+}
+
+.container .nutrition {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.container .nutrition .title {
+  color: var(--Nutmeg);
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.container .nutrition .subtitle {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.875rem;
+  color: var(--WengeBrown);
+}
+
+.container .nutrition .nutritionTable {
+  margin-top: 1rem;
+}
+
+.container .nutrition .nutritionTable .item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--LightGrey);
+}
+
+.container .nutrition .nutritionTable .item:last-child {
+  border-bottom: 0;
+}
+.container .nutrition .nutritionTable .item p:nth-child(2) {
+  color: var(--Nutmeg);
+  font-weight: 700;
+}
+.container .nutrition .nutritionTable .item > * {
+  width: 100%;
+  margin-right: auto;
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 87.5%;
+  }
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .container .omelette {
+    width: 100%;
+    border-radius: 0;
+  }
+  .container .text {
+    padding: 0 1rem;
+  }
+  .container .preparation {
+    width: 94%;
+    margin: 1rem auto;
+  }
+}
